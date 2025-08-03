@@ -30,3 +30,17 @@ async function getfacts() {
         console.log("error: ", err);
     }
 }
+
+
+
+//using axios
+
+async function getfact(){
+    try{
+    const res = await axios.get(url);
+    console.log(res);
+    }catch(e){
+        console.log("Error is ",e);
+    }
+    
+}
